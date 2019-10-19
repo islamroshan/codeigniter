@@ -3,9 +3,7 @@
 <?php $attributes = array('id'=>'register_form' , 'class' => 'form-horizontal'); ?>
 
  <?php echo validation_errors(); ?>
-<p>
 
-</p>
 <?php echo form_open('Users/register', $attributes); ?>
 
 <div class="form-group">

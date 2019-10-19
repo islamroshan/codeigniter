@@ -22,12 +22,20 @@
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url();?>users/register">Register</a>
       </li>
-    </ul>
-    <ul class="navbar-nav navbar-right">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Logout</a>
+       <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url();?>projects">Projects</a>
       </li>
+       
     </ul>
+     <?php if($this->session->userdata('logged_in')): ?>
+      <ul class="navbar-nav navbar-right">
+       
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo base_url();?>users/logout">Logout</a>
+        </li>
+   
+      </ul>
+       <?php endif; ?>
   </div>
 </nav>
  <div class="container">

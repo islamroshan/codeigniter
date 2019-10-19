@@ -26,14 +26,7 @@ $data = array(
 
 <?php else: ?>
 
-<p class="bg-danger">
-<?php 
-if($this->session->flashdata('user_registered'))
-{
-	echo $this->session->flashdata('user_registered');
-}  
-?>
-</p>
+
 
 <h2>Login Form</h2>
 
