@@ -12,7 +12,8 @@
 	$data =  array(
 		'class' => 'form-control',
 		 'name' => 'username',
-		 'placeholder' => 'Enter your user name'
+		 'placeholder' => 'Enter your user name',
+		 'value' => set_value('username')
 	);
 
 	?>
@@ -25,7 +26,8 @@
 	$data =  array(
 		 'class' => 'form-control',
 		 'name' => 'password',
-		 'placeholder' => 'Enter your password'
+		 'placeholder' => 'Enter your password',
+
 	);
 
 	?>
@@ -51,7 +53,8 @@
 	$data =  array(
 		'class' => 'form-control',
 		 'name' => 'first_name',
-		 'placeholder' => 'Enter your user first name'
+		 'placeholder' => 'Enter your user first name',
+		  'value' => set_value('first_name')
 	);
 
 	?>
@@ -64,7 +67,8 @@
 	$data =  array(
 		'class' => 'form-control',
 		 'name' => 'last_name',
-		 'placeholder' => 'Enter your last name'
+		 'placeholder' => 'Enter your last name',
+		 'value' => set_value('last_name')
 	);
 
 	?>
@@ -77,7 +81,8 @@
 	$data =  array(
 		 'class' => 'form-control',
 		 'name' => 'email',
-		 'placeholder' => 'Enter your email'
+		 'placeholder' => 'Enter your email',
+		 'value' => set_value('email')
 	);
 
 	?>

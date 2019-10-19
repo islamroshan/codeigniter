@@ -18,26 +18,27 @@
 <?php endif; ?>
 </p>
 <?php if(isset($projects)): ?>
-<h1> Your Projects</h1>
+ 
 
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Project Name</th>
-			<th>Project Description</th>
-			<th>Action</th>
-		</tr>
-	</thead>
-	<tbody>	
-		<?php foreach($projects as $project): ?>
-			<tr>
-				<td><?php echo $project->project_name; ?></td>
-				<td><?php echo $project->project_body; ?></td>
-				<td><a href='<?php echo base_url();?>projects/display/<?php echo $project->id ?>'>View</a></td>
-			</tr>
-		<?php endforeach; ?>	
-	</tbody>
-</table>
+ <ul class="list-group">
+ 	<li class="list-group-item active">Your Projects</li>
+ 	<?php foreach($projects as $project): ?>
+  	<li class="list-group-item"><?php echo $project->project_name; ?> <a href='<?php echo base_url();?>projects/display/<?php echo $project->id ?>'>View</a></li>
+
+  <?php endforeach; ?>
+</ul>
+    
+
+<?php endif; ?>
+<?php if(isset($tasks)): ?>
+ 
+ <ul class="list-group mt-2">
+ 	<li class="list-group-item active">Your Tasks</li>
+ 	<?php foreach($tasks as $task): ?>
+  	<li class="list-group-item"><?php echo $task->task_name; ?> <a href='<?php echo base_url();?>tasks/display/<?php echo $task->id ?>'>View</a></li>
+
+  <?php endforeach; ?>
+</ul>
 <?php else: ?>
 <div class="jumbotron">
 	<h2 class="text-center">Welcome to Codeigniter login to continue </h2>
